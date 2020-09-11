@@ -18,8 +18,8 @@ fi
 
 if [ ext="" ]
 then
-	gobuster dir -u "http://$ip$prt$dir" -w $wlist -t 75
+	gobuster dir -u "http://$ip$prt$dir/" -w $wlist -t 75
 else
-	gobuster dir -u "http://$ip$prt$dir" -w $wlist -x $ext -t 75
+	gobuster dir -u "http://$ip$prt$dir/" -w $wlist -x $ext -t 75
 fi
 
