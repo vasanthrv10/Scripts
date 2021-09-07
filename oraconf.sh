@@ -150,11 +150,11 @@ FileConf() {
 	echo "export ORACLE_SID=CDB1" >> $bash_profile
 	echo "export ORACLE_BASE=/u01/app/oracle" >> $bash_profile
 	echo "export ORACLE_UNQNAME=CDB1" >> $bash_profile
-	echo "export ORACLE_HOME=$ORACLE_BASE/product/12.1.0.2/db_1" >> $bash_profile
-	echo "export PATH=/usr/sbin:$PATH" >> $bash_profile
-	echo "export PATH=$ORACLE_HOME/bin:$PATH" >> $bash_profile
-	echo "export LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib" >> $bash_profile
-	echo "export CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib" >> $bash_profile
+	echo "export ORACLE_HOME=\$ORACLE_BASE/product/12.1.0.2/db_1" >> $bash_profile
+	echo "export PATH=/usr/sbin:\$PATH" >> $bash_profile
+	echo "export PATH=\$ORACLE_HOME/bin:\$PATH" >> $bash_profile
+	echo "export LD_LIBRARY_PATH=\$ORACLE_HOME/lib:/lib:/usr/lib" >> $bash_profile
+	echo "export CLASSPATH=\$ORACLE_HOME/jlib:\$ORACLE_HOME/rdbms/jlib" >> $bash_profile
 }
 
 
