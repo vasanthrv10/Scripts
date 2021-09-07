@@ -50,7 +50,7 @@ UserGrpCreation() {
 			echo $msg; echo $msg >> $logpath
 		fi
     else
-    	msg=echo "Group dba already exists..."
+    	msg="Group dba already exists..."
     	echo $msg; echo $msg >> $logpath
     fi
 
