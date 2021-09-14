@@ -2,6 +2,7 @@
 
 # Script for configuring oracle installation
 # Developed by: VASANTHAN
+# contact: vasanthanrv10@gmail.com
 
 # check root privilege and path
 if [ '$(id -u)' -ne 0 ]; then
